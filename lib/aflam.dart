@@ -5,6 +5,7 @@ import 'package:movies/provider/language_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'core/app_routes.dart';
+import 'core/app_theme.dart';
 import 'l10n/app_localizations.dart';
 
 class Aflam extends StatefulWidget {
