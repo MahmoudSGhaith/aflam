@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movies/provider/language_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'core/app_routes.dart';
+import 'l10n/app_localizations.dart';
 
 class Aflam extends StatefulWidget {
   final String? token;
