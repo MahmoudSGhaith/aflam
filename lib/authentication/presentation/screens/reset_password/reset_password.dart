@@ -32,10 +32,9 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) =>
-          ResetPasswordCubit(
-            AuthRepositoriesImpl(AuthDataSourceImpl(NetworkServices())),
-          ),
+      create: (context) => ResetPasswordCubit(
+        AuthRepositoriesImpl(AuthDataSourceImpl(NetworkServices())),
+      ),
       child: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -45,7 +44,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
         ),
         body: BlocConsumer<ResetPasswordCubit, ResetPasswordStates>(
           listener: (context, state) {
-            if(state is ResetPasswordLoading){
+            if (state is ResetPasswordLoading) {
               showDialog(
                 context: context,
                 barrierDismissible: false,
@@ -63,8 +62,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                   ),
                 ),
               );
-            }
-            else if(state is ResetPasswordSuccess){
+            } else if (state is ResetPasswordSuccess) {
               showDialog(
                 context: context,
                 builder: (_) => AlertDialog(
@@ -76,7 +74,10 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                         'assets/images/resetpassword.json',
                         height: 200.h,
                       ),
-                      Text('ResetPassword Success', style: AppStyles.yellow16medium),
+                      Text(
+                        'ResetPassword Success',
+                        style: AppStyles.yellow16medium,
+                      ),
                     ],
                   ),
                 ),
@@ -85,8 +86,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                 //todo : remove onBoarding1 and replace it with home screen
                 Navigator.pushReplacementNamed(context, AppRoutes.loginScreen);
               });
-            }
-            else if(state is ResetPasswordError){
+            } else if (state is ResetPasswordError) {
               Navigator.pop(context);
               showDialog(
                 context: context,
@@ -156,13 +156,14 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 120.h),
+                      SizedBox(height: 100.h),
                       CustomCupertinoButton(
                         text: AppLocalizations.of(context)!.resetPassword,
                         onPress: () {
                           if (formKey.currentState!.validate()) {
                             cubit.resetPassword();
                           }
+                          Navigator.pushNamed(context, AppRoutes.loginScreen);
                         },
                         backgroundColor: ColorsManger.yellow,
                         borderColor: ColorsManger.yellow,

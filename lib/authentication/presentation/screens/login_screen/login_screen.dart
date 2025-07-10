@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
               );
               Future.delayed(const Duration(seconds: 2), () {
                 //todo : remove onBoarding1 and replace it with home screen
-                Navigator.pushReplacementNamed(context, AppRoutes.onBoarding1Screen);
+                Navigator.pushReplacementNamed(context, AppRoutes.mainLayout);
               });
             }
             else if (state is LoginErrorState) {
@@ -110,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       SizedBox(height: 70.h),
                       Image(
-                        image: AssetImage(AssetsManger.mainLogo),
+                        image: const AssetImage(AssetsManger.mainLogo),
                         width: 120.w,
                         height: 120.h,
                       ),
@@ -146,7 +146,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             SizedBox(height: 15.h),
-                            // forget_password
+                            // reset_password
                             Container(
                               alignment: Alignment.centerRight,
                               child: TextButton(
@@ -158,7 +158,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   );
                                 },
                                 child: Text(
-                                  AppLocalizations.of(context)!.forgotPassword,
+                                  AppLocalizations.of(context)!.resetPassword,
                                   style: AppStyles.yellow16medium,
                                 ),
                               ),
@@ -203,59 +203,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               ],
                             ),
                             SizedBox(height: 5.h),
-                            //or
-                            Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                Divider(
-                                  height: 1,
-                                  color: ColorsManger.yellow,
-                                  thickness: 1.5,
-                                  endIndent: 50.w,
-                                  indent: 50.w,
-                                ),
-                                Container(
-                                  alignment: Alignment.center,
-                                  color: ColorsManger.black,
-                                  width: 50.w,
-                                  height: 50.h,
-                                  child: Text(
-                                    AppLocalizations.of(context)!.or,
-                                    style: AppStyles.yellow16medium,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            SizedBox(height: 15.h),
-                            //login_with_google
-                            Stack(
-                              alignment: Alignment.centerLeft,
-                              children: [
-                                SizedBox(
-                                  width: double.infinity,
-                                  child: CustomCupertinoButton(
-                                    backgroundColor: ColorsManger.yellow,
-                                    borderColor: ColorsManger.yellow,
-                                    text: AppLocalizations.of(
-                                      context,
-                                    )!.loginWithGoogle,
-                                    onPress: () {},
-                                  ),
-                                ),
-                                Container(
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: 20.h,
-                                  ),
-                                  child: Image(
-                                    image: const AssetImage(
-                                      AssetsManger.google,
-                                    ),
-                                    width: 55.w,
-                                    height: 55.h,
-                                  ),
-                                ),
-                              ],
-                            ),
                             SizedBox(height: 15.h),
                             const ChangeAppLanguage(),
                           ],

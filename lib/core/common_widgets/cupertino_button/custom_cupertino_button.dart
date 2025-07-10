@@ -22,6 +22,7 @@ class CustomCupertinoButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 15.h),
       width: double.infinity,
       height: 85.h,
       decoration: BoxDecoration(
@@ -30,8 +31,8 @@ class CustomCupertinoButton extends StatelessWidget {
       ),
       child: CupertinoButton(
         color: backgroundColor,
-        child: Text(text, style: AppStyles.black18medium.copyWith(color: textColor())),
         onPressed: onPress,
+        child: Text(text, style: AppStyles.black18medium.copyWith(color: textColor())),
       ),
     );
   }

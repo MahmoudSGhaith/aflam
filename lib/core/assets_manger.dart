@@ -38,4 +38,15 @@ class AssetsManger {
   static const String mainLogo = "$base/splashLogo.png";
   static const String google = "$base/google.png";
   static const String resetPassword = "$base/resetPassword-.png";
+  static const String watchNow = "$base/watchNow.png";
+  static const String availableNow = "$base/availableNow.png";
+  static const String save = "$base/save.png";
+  static const String moviesDetailsPic = "$base/moviesDetailsPic.png";
+  static const String screenshot1 = "$base/screenshot1.png";
+  static const String screenshot2 = "$base/screenshot2.png";
+  static const String screenshot3 = "$base/screenshot3.png";
+  static const String actress1 = "$base/actress1.png";
+  static const String actress2 = "$base/actress2.png";
+  static const String actress3 = "$base/actress3.png";
+  static const String actress4 = "$base/actress4.png";
 }

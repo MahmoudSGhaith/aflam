@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movies/core/common_widgets/cupertino_button/custom_cupertino_button.dart';
 import 'package:movies/onBoarding/onBoarding5.dart';
 import 'package:page_transition/page_transition.dart';
+import '../authentication/presentation/screens/login_screen/login_screen.dart';
 import '../core/assets_manger.dart';
 import '../core/app_styles.dart';
 import '../core/colors_manger.dart';
@@ -96,7 +97,7 @@ class Onboarding6 extends StatelessWidget {
       PageTransition(
         type: PageTransitionType.bottomToTopPop,
         childCurrent: this,
-       // child:  LoginScreen(),
+        child:  LoginScreen(),
         duration: Duration(milliseconds: 500),
       ),
     );

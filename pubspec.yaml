@@ -8,6 +8,8 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
+  injectable:
+  get_it:
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -30,7 +32,11 @@ dependencies:
   lottie: ^2.7.0
   toggle_switch: ^2.3.0
   carousel_slider:
+  dartz: ^0.10.1
+  dart_either: ^2.0.0
 dev_dependencies:
+  injectable_generator:
+  build_runner:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.1

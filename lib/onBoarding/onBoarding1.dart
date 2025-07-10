@@ -16,7 +16,7 @@ class Onboarding1 extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
                 ColorsManger.onBoardingGradient1_1,
@@ -30,7 +30,7 @@ class Onboarding1 extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              Image(
+              const Image(
                 image: AssetImage(AssetsManger.onBoarding1),
                 fit: BoxFit.cover,
                 width: double.infinity,

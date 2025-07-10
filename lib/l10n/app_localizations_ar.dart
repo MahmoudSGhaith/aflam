@@ -48,7 +48,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get confirmPassword => 'تأكيد كلمة المرور';
 
   @override
-  String get forgotPassword => 'هل نسيت كلمة المرور؟';
+  String get resetPassword => 'إعاده تعيين كلمه المرور';
 
   @override
   String get alreadyHaveAccount => 'لديك حساب بالفعل؟';
@@ -216,9 +216,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get pickAvatar => 'اختر الصورة الرمزية';
 
   @override
-  String get resetPassword => 'إعاده تعيين كلمه المرور';
-
-  @override
   String get deleteAccount => 'مسح الحساب';
 
   @override
@@ -234,11 +231,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get error => 'البريد الإلكتروني أو كلمة المرور غير صحيحة';
 
   @override
-  String get reset_password => 'إعاده تعيين كلمه المرور';
-
-  @override
   String get old_password => 'كلمه السر القديمه';
 
   @override
   String get new_password => 'كلمه السر الحديثه';
+
+  @override
+  String get explore => 'Explore';
 }

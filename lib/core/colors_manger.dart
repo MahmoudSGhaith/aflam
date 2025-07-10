@@ -10,6 +10,7 @@ class ColorsManger {
   static const Color yellow = Color(0xffF6BD00);
   static const Color red = Color(0xffE82626);
   static const Color grey = Color(0xff282A28);
+  static const Color lightGrey = Color(0xff4f4f4f);
   static const Color green = Color(0xff228B22);
   static const Color onBoardingGradient1_1 = Color(0xff1E1E1E);
   static const Color onBoardingGradient1_2 = Color(0xff121312);

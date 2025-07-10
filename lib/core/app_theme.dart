@@ -7,22 +7,26 @@ import 'colors_manger.dart';
 class AppTheme {
   static final ThemeData darkTheme = ThemeData(
     primaryColor: ColorsManger.white,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       centerTitle: true,
       color: ColorsManger.black,
       elevation: 2,
-      iconTheme: IconThemeData(color: ColorsManger.yellow, size: 25),
+      iconTheme: IconThemeData(color: ColorsManger.white, size: 25),
     ),
     scaffoldBackgroundColor: ColorsManger.black,
-    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: ColorsManger.lightGrey ,
+      selectedItemColor: ColorsManger.yellow,
+      unselectedItemColor: ColorsManger.white,
       elevation: 2,
-      showSelectedLabels: false,
-      showUnselectedLabels: false,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
+      type: BottomNavigationBarType.fixed,
     ),
     inputDecorationTheme: InputDecorationTheme(
       suffixIconColor: ColorsManger.white,
       errorBorder: OutlineInputBorder(
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: ColorsManger.red,
           width: 2,
           strokeAlign: 2,
@@ -30,7 +34,7 @@ class AppTheme {
         borderRadius: BorderRadius.circular(25.r),
       ),
       focusedBorder: OutlineInputBorder(
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: ColorsManger.white,
           width: 2,
           strokeAlign: 2,
@@ -38,7 +42,7 @@ class AppTheme {
         borderRadius: BorderRadius.circular(25.r),
       ),
       enabledBorder: OutlineInputBorder(
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: ColorsManger.grey,
           width: 2,
           strokeAlign: 2,
@@ -51,7 +55,7 @@ class AppTheme {
       hintStyle: AppStyles.white16medium,
       filled: true,
       focusedErrorBorder: OutlineInputBorder(
-        borderSide: BorderSide(
+        borderSide: const BorderSide(
           color: ColorsManger.red,
           width: 2,
           strokeAlign: 2,
@@ -59,7 +63,7 @@ class AppTheme {
         borderRadius: BorderRadius.circular(25.r),
       ),
       prefixIconColor: ColorsManger.white,
-      outlineBorder: BorderSide(
+      outlineBorder: const BorderSide(
         color: ColorsManger.grey,
         strokeAlign: 2,
         width: 2,

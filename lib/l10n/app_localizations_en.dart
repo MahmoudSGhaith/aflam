@@ -48,7 +48,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get confirmPassword => 'Confirm Password';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get resetPassword => 'Reset Password';
 
   @override
   String get alreadyHaveAccount => 'Already have an account?';
@@ -153,8 +153,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noFavoritesYet => 'You have no favorite movies yet.';
 
   @override
-  String get noWatchlistYet =>
-      'You haven\'t added any movies to your watchlist yet.';
+  String get noWatchlistYet => 'You haven\'t added any movies to your watchlist yet.';
 
   @override
   String get editProfile => 'Edit Profile';
@@ -217,9 +216,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pickAvatar => 'Pick Avatar';
 
   @override
-  String get resetPassword => 'Reset Password';
-
-  @override
   String get deleteAccount => 'Delete Account';
 
   @override
@@ -235,11 +231,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get error => 'Incorrect email or password. Please try again.';
 
   @override
-  String get reset_password => 'Reset Password';
-
-  @override
   String get old_password => 'OldPassword';
 
   @override
   String get new_password => 'NewPassword';
+
+  @override
+  String get explore => 'Explore';
 }

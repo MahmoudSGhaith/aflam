@@ -15,7 +15,7 @@ class ForgetPasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          AppLocalizations.of(context)!.forgotPassword,
+          AppLocalizations.of(context)!.resetPassword,
           style: AppStyles.yellow20medium,
         ),
       ),

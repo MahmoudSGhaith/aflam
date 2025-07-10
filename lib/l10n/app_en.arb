@@ -12,7 +12,7 @@
   "email": "Email",
   "password": "Password",
   "confirmPassword": "Confirm Password",
-  "forgotPassword": "Forgot Password?",
+  "resetPassword": "Reset Password",
   "alreadyHaveAccount": "Already have an account?",
   "dontHaveAccount": "Don't have an account?",
   "signIn": "Sign In",
@@ -68,13 +68,13 @@
   "phoneNumber" : "Phone Number",
   "verifyEmail" : "Verify Email",
   "pickAvatar" : "Pick Avatar",
-  "resetPassword" : "Reset Password",
   "deleteAccount" : "Delete Account",
   "updateData" : "Update Data",
   "waiting" : "Please Wait",
   "login_successfully" : "Login Successfully",
   "error" : "Incorrect email or password. Please try again.",
-  "reset_password" : "Reset Password",
   "old_password" : "OldPassword",
-  "new_password" : "NewPassword"
+  "new_password" : "NewPassword",
+  "explore" : "Explore"
+
 }
